@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSXX Finish"
+  short_description: "Finish an OpenSpec change end to end"
+  default_prompt: "Use $opsxx-finish to complete, verify, sync, and archive an OpenSpec change."

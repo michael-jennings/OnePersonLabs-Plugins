@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX Archive Change"
+  short_description: "Archive a completed OpenSpec change"
+  default_prompt: "Use $opsx-archive to archive a verified OpenSpec change."

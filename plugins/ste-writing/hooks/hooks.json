@@ -1,7 +1,8 @@
 {
   "hooks": {
-    "Stop": [
+    "PostToolUse": [
       {
+        "matcher": "Edit|Write|ApplyPatch|apply_patch",
         "hooks": [
           {
             "type": "command",

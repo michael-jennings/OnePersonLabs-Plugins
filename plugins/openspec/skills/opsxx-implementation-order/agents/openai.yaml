@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSXX Implementation Order"
+  short_description: "Print dependency-derived OpenSpec implementation order"
+  default_prompt: "Use $opsxx-implementation-order to show the current OpenSpec implementation order."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX New Change"
+  short_description: "Start a new OpenSpec change workflow"
+  default_prompt: "Use $opsx-new to create a structured OpenSpec change for this request."

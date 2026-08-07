@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSXX Advance"
+  short_description: "Select and finish the next unblocked OpenSpec change"
+  default_prompt: "Use $opsxx-advance to drive the next unblocked OpenSpec change to archive."

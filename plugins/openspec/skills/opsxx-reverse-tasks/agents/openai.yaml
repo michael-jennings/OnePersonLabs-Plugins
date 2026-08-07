@@ -1,0 +1,3 @@
+interface:
+  display_name: "OPSXX Reverse Apply"
+  short_description: "Update tasks in an OpenSpec change, based on actual implementation state (completed, stale, pending)."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSXX Orchestrate"
+  short_description: "Complete eligible OpenSpec changes in isolated worktrees"
+  default_prompt: "Use $opsxx-orchestrate to process eligible OpenSpec changes in dependency order."

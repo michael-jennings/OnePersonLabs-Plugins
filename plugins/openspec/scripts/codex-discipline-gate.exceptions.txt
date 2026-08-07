@@ -1,0 +1,32 @@
+# codex-discipline-gate.exceptions.txt
+#
+# Persistent false-positive allowlist for the event-specific discipline hooks. Phrases listed
+# here are PERMANENTLY exempt from the gate's checks (MVP version tokens,
+# deferral phrasing). Unlike the one-shot <!-- discipline-bypass --> sentinel,
+# an entry here survives across every edit and every mode (archive/write/
+# response).
+#
+# WHEN to add an entry:
+#   The phrase is one the gate will keep mis-flagging because it is genuinely
+#   and distinctly OUTSIDE what the check guards against -- e.g. an external
+#   library's real release name ("Tauri v2"), or a fixed technical idiom that
+#   merely contains a banned token. The MVP rule is about not version-phasing
+#   YOUR OWN product/architecture; a third-party project's actual major
+#   version is not that.
+#
+# WHEN NOT to add an entry:
+#   The flagged text really is MVP-framing or a real deferral you'd rather not
+#   fix. Fix the phrase instead. This file is committed and code-reviewed; a
+#   bare or over-broad entry is itself an auditable defect.
+#
+# FORMAT:
+#   - One phrase per line. '#' comments and blank lines are ignored.
+#   - Matched case-insensitively.
+#   - Make each entry SPECIFIC: include the surrounding words ("Tauri v2", not
+#     bare "v2"). An entry suppresses a hit only when the entry is a substring
+#     of the flagged line AND the entry itself contains the flagged token, so
+#     a specific entry cannot whitelist an unrelated violation on the same
+#     line. A bare token ("v2") would over-match -- do not do that.
+
+# External library / framework real release names (third-party version refs).
+Tauri v2

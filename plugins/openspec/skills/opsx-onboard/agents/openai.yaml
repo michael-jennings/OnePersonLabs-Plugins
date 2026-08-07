@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX Onboard"
+  short_description: "Walk through a complete OpenSpec workflow with narration"
+  default_prompt: "Use $opsx-onboard to guide a complete OpenSpec workflow cycle."

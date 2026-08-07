@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX Bulk Archive"
+  short_description: "Archive several completed OpenSpec changes together"
+  default_prompt: "Use $opsx-bulk-archive to batch-archive completed OpenSpec changes."

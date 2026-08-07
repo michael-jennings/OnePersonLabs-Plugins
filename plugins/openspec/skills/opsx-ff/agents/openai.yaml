@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX Fast-Forward Change"
+  short_description: "Generate required OpenSpec artifacts for implementation"
+  default_prompt: "Use $opsx-ff to fast-forward artifact creation for this OpenSpec change."

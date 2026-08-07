@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX Explore"
+  short_description: "Explore an idea before committing to an OpenSpec change"
+  default_prompt: "Use $opsx-explore to investigate and clarify this idea before implementation."

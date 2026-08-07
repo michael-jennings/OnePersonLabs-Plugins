@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX Verify Change"
+  short_description: "Verify implementation against OpenSpec artifacts"
+  default_prompt: "Use $opsx-verify to confirm the implementation matches the selected change."

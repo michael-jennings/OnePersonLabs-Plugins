@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX Continue Change"
+  short_description: "Create the next artifact for an OpenSpec change"
+  default_prompt: "Use $opsx-continue to continue the selected OpenSpec workflow."

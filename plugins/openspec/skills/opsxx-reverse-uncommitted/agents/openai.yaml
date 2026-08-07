@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSXX Reverse Uncommitted"
+  short_description: "Create a clean OpenSpec proposal from dirty worktree drift"
+  default_prompt: "Use $opsxx-reverse-uncommitted to inspect staged and unstaged changes, reject ghost deltas, audit stale residue, and propose a reverse-engineered OpenSpec change."

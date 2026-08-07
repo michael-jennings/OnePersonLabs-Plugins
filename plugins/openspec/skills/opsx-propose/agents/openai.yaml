@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX Propose"
+  short_description: "Create a complete OpenSpec proposal in one pass"
+  default_prompt: "Use $opsx-propose to draft the OpenSpec proposal artifacts for this change."

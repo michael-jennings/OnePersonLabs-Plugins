@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX Sync Specs"
+  short_description: "Merge OpenSpec delta specs into main specs"
+  default_prompt: "Use $opsx-sync to sync the selected change into main specs."

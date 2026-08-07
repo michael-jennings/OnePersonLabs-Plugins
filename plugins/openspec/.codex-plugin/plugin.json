@@ -1,0 +1,20 @@
+{
+  "name": "openspec",
+  "version": "0.1.0",
+  "description": "OpenSpec workflow skills, dependency tooling, orchestration helpers, and Codex guard hooks.",
+  "license": "MIT",
+  "keywords": [
+    "openspec",
+    "skills",
+    "workflow",
+    "specifications",
+    "orchestration"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "OpenSpec",
+    "shortDescription": "Plan, implement, verify, and archive OpenSpec changes",
+    "longDescription": "OpenSpec workflow skills with dependency-aware opsxx extensions, supporting scripts, and Codex hooks for archive and artifact discipline."
+  }
+}

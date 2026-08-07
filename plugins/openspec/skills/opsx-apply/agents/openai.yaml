@@ -1,0 +1,4 @@
+interface:
+  display_name: "OPSX Apply Change"
+  short_description: "Implement remaining tasks from an OpenSpec change"
+  default_prompt: "Use $opsx-apply to implement the selected OpenSpec change."

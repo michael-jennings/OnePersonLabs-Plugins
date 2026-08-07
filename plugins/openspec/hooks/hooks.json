@@ -1,0 +1,84 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/scripts/codex-dangerous-shell-gate.sh\"",
+            "timeout": 20
+          },
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/scripts/codex-openspec-archive-order-gate.sh\"",
+            "timeout": 25
+          },
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/scripts/codex-openspec-archive-quality-gate.sh\"",
+            "timeout": 600
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/scripts/codex-archive-discipline-gate.sh\"",
+            "timeout": 20
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write|ApplyPatch|apply_patch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/scripts/codex-stock-openspec-guard.sh\"",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|ApplyPatch|apply_patch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/scripts/codex-artifact-discipline-gate.sh\"",
+            "timeout": 20
+          },
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/scripts/codex-openspec-dependency-gate.sh\"",
+            "timeout": 20
+          },
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/scripts/codex-skill-reference-sigil-gate.sh\"",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/scripts/codex-response-discipline-gate.sh\"",
+            "timeout": 20
+          },
+          {
+            "type": "command",
+            "command": "bash \"${PLUGIN_ROOT}/scripts/codex-skill-judge-gate.sh\"",
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  }
+}
