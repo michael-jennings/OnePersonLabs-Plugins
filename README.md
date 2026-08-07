@@ -1,0 +1,1 @@
+Plugin wrappers for Codex. Keeps the ~/.codex directory clean and allows for easy installation of plugins from the marketplace. Each plugin is installed in its own directory under ~/.codex/plugins. The plugin wrapper will automatically add the plugin to the marketplace and install it in the correct location.

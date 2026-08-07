@@ -1,0 +1,44 @@
+{
+  "name": "onepersonlabs-plugins",
+  "interface": {
+    "displayName": "One-Person Labs Plugins"
+  },
+  "plugins": [
+    {
+      "name": "awesome-codex-subagents",
+      "source": {
+        "source": "local",
+        "path": "./plugins/awesome-codex-subagents"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "matt-pocock-skills",
+      "source": {
+        "source": "local",
+        "path": "./plugins/matt-pocock-skills"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "ste-writing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ste-writing"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

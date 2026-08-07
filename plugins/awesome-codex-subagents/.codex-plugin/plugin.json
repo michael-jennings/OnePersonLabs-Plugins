@@ -1,0 +1,13 @@
+{
+  "name": "awesome-codex-subagents",
+  "version": "0.1.0",
+  "description": "Variety of subagents.",
+  "license": "MIT",
+  "keywords": ["subagents"],
+  "agents": "./agents/",
+  "interface": {
+    "displayName": "Awesome Codex Subagents",
+    "shortDescription": "A variety of subagents for different tasks",
+    "longDescription": "A collection of subagents designed to handle various aspects of code development and maintenance."
+  }
+}
